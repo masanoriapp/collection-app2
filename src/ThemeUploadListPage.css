@@ -1,0 +1,25 @@
+.theme-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.theme-list li {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+@media (max-width: 600px) {
+  .theme-list {
+    flex-direction: column;
+  }
+  .theme-list li {
+    width: 100%;
+    border-right: none;
+  }
+}
