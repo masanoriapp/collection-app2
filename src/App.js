@@ -12,7 +12,7 @@ function AppWrapper() {
 
   return (
     <>
-      {!hideNavbar && <Navbar />}
+      {!hideNavbar && <Navbar currentPath={location.pathname} />}
       <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route path="/themes" element={<ThemeUploadListPage />} />
@@ -31,4 +31,3 @@ function App() {
 }
 
 export default App;
-
